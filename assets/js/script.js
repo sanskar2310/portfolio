@@ -107,3 +107,37 @@ for (let i = 0; i < projectItems.length; i++) {
     projectsModalFunc();
   });
 }
+
+  // JavaScript for lightbox functionality
+const lightbox = document.getElementById('lightbox');
+const lightboxBody = document.getElementById('lightbox-body');
+const lightboxClose = document.getElementById('lightbox-close');
+const projectLinks = document.querySelectorAll('[data-lightbox]');
+
+projectLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    const projectItem = link.closest('.project-item');
+    const projectTitle = projectItem.querySelector('.project-title').textContent;
+    const projectCategory = projectItem.querySelector('.project-category').textContent;
+    const projectImgSrc = projectItem.querySelector('img').src;
+        
+    lightboxBody.innerHTML = `
+    <h2>${projectTitle}</h2>
+    <p>Category: ${projectCategory}</p>
+    <img src="${projectImgSrc}" alt="${projectTitle}">
+    `;
+
+    lightbox.style.display = 'flex';
+    });
+  });
+
+lightboxClose.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', event => {
+    if (event.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });

@@ -56,7 +56,7 @@
       <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
@@ -72,7 +72,7 @@
           </li>
         </ul>
       </nav>
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
@@ -87,7 +87,7 @@
             </p>
         </section>
         <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">What I'm doing</h3>
           <ul class="service-list">
             <li class="service-item">
               <div class="service-icon-box">
@@ -113,7 +113,7 @@
             </li>
             <li class="service-item">
               <div class="service-icon-box">
-                <img src="./assets/images/ml.png" alt="mobile app icon" width="40">
+                <img src="./assets/images/ml.png" alt="machine learning icon" width="40">
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Machine Learning</h4>
@@ -195,7 +195,16 @@
             </li>
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">MySql</h5>
+                <h5 class="h5">HTML, CSS & JavaScript</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
                 <data value="70">70%</data>
               </div>
               <div class="skill-progress-bg">
@@ -204,44 +213,40 @@
             </li>
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">PowerBI</h5>
-                <data value="50">50%</data>
+                <h5 class="h5">Machine Learning</h5>
+                <data value="60">60%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">React JS</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
             </li>
           </ul>
         </section>
-        <br>
-        <center>Click below to view complete Resume</center>
-        <!-- Add PDF Resume Button -->
-        <section class="resume-download">
-          <a href="Sanskar Chaudhary Resume.pdf" class="btn" target="_blank">
-            <ion-icon name="eye-outline"></ion-icon>
-            <span>View PDF Resume</span>
-          </a>
-        </section>
       </article>
-      
-      <!--- #PROJECTS --->
-      <article class="projects" data-page="projects">
+      <!--- #PROJECT --->
+      <article class="portfolio" data-page="projects">
         <header>
           <h2 class="h2 article-title">Projects</h2>
         </header>
         <section class="projects">
           <ul class="filter-list">
             <li class="filter-item">
-              <button class="active" data-filter-btn="all">All</button>
+              <button class="active" data-filter-btn>All</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn="web-based">Web-based</button>
+              <button data-filter-btn>Python Projects</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn="machine learning">Machine Learning</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn="python">Python</button>
+              <button data-filter-btn>Web-based</button>
             </li>
           </ul>
           <div class="filter-select-box">
@@ -253,22 +258,19 @@
             </button>
             <ul class="select-list">
               <li class="select-item">
-                <button data-select-item="all">All</button>
+                <button data-select-item>All</button>
               </li>
               <li class="select-item">
-                <button data-select-item="web-based">Web-based</button>
+                <button data-select-item>Python Projects</button>
               </li>
               <li class="select-item">
-                <button data-select-item="machine learning">Machine Learning</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item="python">Others</button>
+                <button data-select-item>Web-based</button>
               </li>
             </ul>
           </div>
           <ul class="project-list">
             <li class="project-item" data-category="web-based">
-              <a href="#">
+              <a href="#" class="project-link" data-lightbox>
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -279,153 +281,63 @@
                 <p class="project-category">Web-based Application</p>
               </a>
             </li>
-            <li class="project-item" data-category="machine learning">
-              <a href="#">
+            <li class="project-item" data-category="python-projects">
+              <a href="#" class="project-link" data-lightbox>
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/project-fatigue.png" alt="fatigue detection" loading="lazy">
-                </figure>
-                <h3 class="project-title">Fatigue Detection System</h3>
-                <p class="project-category">Machine Learning</p>
-              </a>
-            </li>
-            <li class="project-item" data-category="others">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/logo.png" alt="password manager" loading="lazy">
+                  <img src="./assets/images/password.png" alt="Password Manager" loading="lazy">
                 </figure>
                 <h3 class="project-title">Password Manager</h3>
-                <p class="project-category">Tkinter</p>
+                <p class="project-category">Python Projects</p>
               </a>
             </li>
-            <li class="project-item" data-category="machine learning">
-              <a href="#">
+            <li class="project-item" data-category="python-projects">
+              <a href="#" class="project-link" data-lightbox>
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/face-detection.png" alt="Face Detection" loading="lazy">
+                  <img src="./assets/images/fatigue.png" alt="Fatigue Detection" loading="lazy">
                 </figure>
-                <h3 class="project-title">Face Detection</h3>
-                <p class="project-category">Machine Learning</p>
-              </a>
-            </li>
-            <li class="project-item" data-category="others">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/Snake_OG-logo.jpg" alt="Snake Game" loading="lazy">
-                </figure>
-                <h3 class="project-title">Snake Game</h3>
-                <p class="project-category">Game</p>
-              </a>
-            </li>
-            <li class="project-item" data-category="others">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/pong.jpeg" alt="Pong Game" loading="lazy">
-                </figure>
-                <h3 class="project-title">Pong Game</h3>
-                <p class="project-category">game</p>
+                <h3 class="project-title">Fatigue Detection System</h3>
+                <p class="project-category">Python Projects</p>
               </a>
             </li>
           </ul>
-          <center>
-            <div class="github-button">
-              <a href="https://github.com/sanskar2310" target="_blank" class="github-link">View More Projects on GitHub</a>
-            </div>
-          </center>
         </section>
       </article>
-      
-      <!--- #ACHIVEMENTS --->
+      <!--- #ACHIEVEMENTS --->
       <article class="achievements" data-page="achievements">
         <header>
           <h2 class="h2 article-title">Achievements</h2>
         </header>
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/Data-analysis.jpg" alt="NPTEL Data Analytics with Python" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Certificate</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-01-01">April, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">NPTEL Data Analytics with Python</h3>
-                  <p class="blog-text">
-                    Certificate from NPTEL
-                  </p>
-                </div>
-              </a>
+        <section class="achievements-text">
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud Computing</h5>
+              </div>
+              <p class="service-item-text">
+                Received a certification in Cloud Computing from ICT Academy.
+              </p>
             </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/cloud-computing.jpg" alt="Data Analysis Certificate" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Certificate</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-01-01">Oct, 2023</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Cloud Computing</h3>
-                  <p class="blog-text">
-                    Certificate from ICT Academy
-                  </p>
-                </div>
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
+              </div>
+              <p class="service-item-text">
+                Completed an SQL course certification from Geekster.
+              </p>
             </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/Data-analytics.jpeg" alt="Cloud Computing Certificate" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Certificate</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-01-01">Sep ,2023</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Data Analysis</h3>
-                  <p class="blog-text">
-                    Certificate from ICT Academy
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/Devtown (1).jpg" alt="DevTown Certificate" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Certificate</p>
-                    <span class="dot"></span>
-                    <time datetime="2024-01-01">April, 2023</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">DevTown Certificate</h3>
-                  <p class="blog-text">
-                    Certificate from DevTown
-                  </p>
-                </div>
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">HTML, CSS, and JS</h5>
+              </div>
+              <p class="service-item-text">
+                Achieved certification in HTML, CSS, and JS course on Udemy.
+              </p>
             </li>
           </ul>
         </section>
@@ -435,51 +347,31 @@
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.458809061692!2d77.073785!3d28.5153552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d930c9ecb81%3A0x4fb4035a7f3e1cbf!2s28.5153552%2C%2077.073785!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
         </section>
-        <section>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:ch.sanskar06@gmail.com" class="contact-link">ch.sanskar06@gmail.com</a>
-            </div>
-          </li>
-          <br>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+916398519191" class="contact-link">+91 6398519191</a>
-            </div>
-          </li>
-          <br>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon> <!-- LinkedIn Icon -->
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">LinkedIn</p>
-              <a href="www.linkedin.com/in/sanskar-chaudhary-09767b241" class="contact-link" target="_blank">LinkedIn</a> <!-- LinkedIn Profile Link -->
-            </div>
-          </li>          
-        </section>     
       </article>
     </div>
   </main>
-  <!--- custom js link --->
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close">&times;</button>
+      <div id="lightbox-body"></div>
+    </div>
+  </div>
   <script src="./assets/js/script.js"></script>
-  <!--- ionicon link --->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@ionic/core@5.5.2/dist/ionic/ionic.js"></script>
 </body>
 </html>
