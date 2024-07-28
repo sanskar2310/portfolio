@@ -91,36 +91,19 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-// JavaScript for lightbox functionality
-const lightbox = document.getElementById('lightbox');
-const lightboxBody = document.getElementById('lightbox-body');
-const lightboxClose = document.getElementById('lightbox-close');
-const projectLinks = document.querySelectorAll('[data-lightbox]');
+const projectItems = document.querySelectorAll("[data-projects-item]");
 
-projectLinks.forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-    const projectItem = link.closest('.project-item');
-    const projectTitle = projectItem.querySelector('.project-title').textContent;
-    const projectCategory = projectItem.querySelector('.project-category').textContent;
-    const projectImgSrc = projectItem.querySelector('img').src;
-        
-    lightboxBody.innerHTML = `
-    <h2>${projectTitle}</h2>
-    <p>Category: ${projectCategory}</p>
-    <img src="${projectImgSrc}" alt="${projectTitle}">
-    `;
+const projectsModalFunc = function () {
+  modalContainer.classList.toggle("active");
+  overlay.classList.toggle("active");
+};
 
-    lightbox.style.display = 'flex';
-    });
+for (let i = 0; i < projectItems.length; i++) {
+  projectItems[i].addEventListener("click", function () {
+    modalImg.src = this.querySelector("[data-projects-avatar]").src;
+    modalImg.alt = this.querySelector("[data-projects-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-projects-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-projects-text]").innerHTML;
+    projectsModalFunc();
   });
-
-lightboxClose.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-  });
-
-lightbox.addEventListener('click', event => {
-  if (event.target === lightbox) {
-    lightbox.style.display = 'none';
-  }
-});
+}
